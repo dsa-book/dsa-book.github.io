@@ -31,7 +31,7 @@ jobs:
     - name: Build the book
       shell: bash -l {0}
       run: |
-        jupyter-book build book
+        jupyter-book build docs
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
