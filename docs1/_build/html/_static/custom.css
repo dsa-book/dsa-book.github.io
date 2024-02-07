@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Andika', sans-serif;
+}
+
+h1 {
+    font-family: 'Andika', sans-serif;
+}
+
+h2 {
+    font-family: 'Andika', sans-serif;
+}
+
+/* Change the text color for CodeMirror to white */
+/* .CodeMirror {
+    color: #ffffff !important;
+} */
+
+/* Change the CodeMirror cursor color to white or another visible color */
+/* .CodeMirror-cursor {
+    border-left: 1px solid #ffffff !important;
+} */
+
+/* Change the background color for CodeMirror lines */
+/* .CodeMirror-lines {
+    background-color: #1e1e1e; 
+} */
+
+/* If you have specific syntax highlighting, you can target that too */
+/* .cm-keyword { 
+    color: #ff79c6 !important; 
+} */
+
+/* .cm-string {
+    color: #f1fa8c !important; 
+} */
+
+/* Add other .cm-* classes as necessary, based on your syntax highlighting scheme */
+
+/* Default styles for light mode */
+/* Default styles for light mode */
+:root[data-mode="light"] .CodeMirror {
+    color: #000000; /* Black text */
+    background-color: #ffffff; /* White background */
+}
+
+/* Specific styles for dark mode */
+:root[data-mode="dark"] .CodeMirror {
+    color: #ffffff; /* White text */
+    background-color: #2d2d2d; /* Less intense black background */
+}
+
+/* Adjust cursor color in dark mode */
+:root[data-mode="dark"] .CodeMirror-cursor {
+    border-left: 1px solid #ffffff;
+}
+
+/* Apply syntax highlighting colors based on the mode */
+:root[data-mode="dark"] .cm-keyword { color: #ff79c6; }
+:root[data-mode="dark"] .cm-def { color: #ff79c6; }
+:root[data-mode="dark"] .cm-builtin { color: #ff79c6; }
+:root[data-mode="dark"] .cm-string { color: #f1fa8c; }
+/* Add other syntax-specific colors as needed for dark mode */
+
+/* Define colors for light mode if they are different */
+
+/* Add other syntax-specific colors as needed for light mode */
+
+
+/* Change the output text color to white when in dark mode */
+/* :root[data-mode="dark"] .jp-OutputArea-output,
+:root[data-mode="dark"] .jp-RenderedText {
+    color: #ffffff !important;
+} */
+
+
+/* Maintain the style for the output area even after code execution */
+/* :root[data-mode="dark"] .jp-OutputArea-output:not([style]),
+:root[data-mode="dark"] .jp-RenderedText:not([style]) {
+    color: #ffffff !important;
+} */
+
+/* Assuming .thebe is added to the body or a parent element when Thebe is activated */
+:root[data-mode="dark"].thebe .jp-OutputArea-output,
+:root[data-mode="dark"].thebe .jp-RenderedText {
+    color: #ffffff !important; /* Ensuring text color is white after Thebe is activated */
+    background-color: #2d2d2d !important; /* Adjust the gray background as needed */
+}
+
+:root[data-mode="dark"] .jp-OutputArea-output pre,
+:root[data-mode="dark"] .jp-RenderedText pre {
+    color: #ffffff !important; /* Ensuring text color is white */
+    background-color: #2d2d2d !important;
+}
+
+/* Specific styles for dark mode */
+:root[data-mode="dark"] .CodeMirror {
+    color: #ffffff; /* White text */
+    background-color: #2d2d2d; /* Less intense black background */
+}
+
+/* Adjust cursor color in dark mode */
+:root[data-mode="dark"] .CodeMirror-cursor {
+    border-left: 1px solid #ffffff;
+}
+
+/* Apply syntax highlighting colors based on the mode */
+:root[data-mode="dark"] .cm-keyword { color: #ff79c6; }
+:root[data-mode="dark"] .cm-def { color: #ff79c6; }
+:root[data-mode="dark"] .cm-builtin { color: #ff79c6; }
+:root[data-mode="dark"] .cm-string { color: #f1fa8c; }
+/* Add other syntax-specific colors as needed for dark mode */
+
+/* Define colors for light mode if they are different */
+
+/* Add other syntax-specific colors as needed for light mode */
+
+
+/* Change the output text color to white when in dark mode */
+/* :root[data-mode="dark"] .jp-OutputArea-output,
+:root[data-mode="dark"] .jp-RenderedText {
+    color: #ffffff !important;
+} */
+
+
+/* Maintain the style for the output area even after code execution */
+/* :root[data-mode="dark"] .jp-OutputArea-output:not([style]),
+:root[data-mode="dark"] .jp-RenderedText:not([style]) {
+    color: #ffffff !important;
+} */
+
+/* Assuming .thebe is added to the body or a parent element when Thebe is activated */
+:root[data-mode="auto"].thebe .jp-OutputArea-output,
+:root[data-mode="auto"].thebe .jp-RenderedText {
+    color: #ffffff !important; /* Ensuring text color is white after Thebe is activated */
+    background-color: #2d2d2d !important; /* Adjust the gray background as needed */
+}
+
+:root[data-mode="auto"] .jp-OutputArea-output pre,
+:root[data-mode="auto"] .jp-RenderedText pre {
+    color: #ffffff !important; /* Ensuring text color is white */
+    background-color: #2d2d2d !important;
+}
+
+/* Specific styles for auto mode */
+:root[data-mode="auto"] .CodeMirror {
+    color: #ffffff; /* White text */
+    background-color: #2d2d2d; /* Less intense black background */
+}
+
+/* Adjust cursor color in auto mode */
+:root[data-mode="auto"] .CodeMirror-cursor {
+    border-left: 1px solid #ffffff;
+}
+
+/* Apply syntax highlighting colors based on the mode */
+:root[data-mode="auto"] .cm-keyword { color: #ff79c6; }
+:root[data-mode="auto"] .cm-def { color: #ff79c6; }
+:root[data-mode="auto"] .cm-builtin { color: #ff79c6; }
+:root[data-mode="auto"] .cm-string { color: #f1fa8c; }
+/* Add other syntax-specific colors as needed for auto mode */
+
+/* Define colors for light mode if they are different */
+
+/* Add other syntax-specific colors as needed for light mode */
+
+
+/* Change the output text color to white when in auto mode */
+/* :root[data-mode="auto"] .jp-OutputArea-output,
+:root[data-mode="auto"] .jp-RenderedText {
+    color: #ffffff !important;
+} */
+
+
+/* Maintain the style for the output area even after code execution */
+/* :root[data-mode="auto"] .jp-OutputArea-output:not([style]),
+:root[data-mode="auto"] .jp-RenderedText:not([style]) {
+    color: #ffffff !important;
+} */
+
+/* Assuming .thebe is added to the body or a parent element when Thebe is activated */
+:root[data-mode="auto"].thebe .jp-OutputArea-output,
+:root[data-mode="auto"].thebe .jp-RenderedText {
+    color: #ffffff !important; /* Ensuring text color is white after Thebe is activated */
+    background-color: #2d2d2d !important; /* Adjust the gray background as needed */
+}
+
+:root[data-mode="auto"] .jp-OutputArea-output pre,
+:root[data-mode="auto"] .jp-RenderedText pre {
+    color: #ffffff !important; /* Ensuring text color is white */
+    background-color: #2d2d2d !important;
+}
+
+:root[data-mode="dark"] {
+    --jp-rendermime-error-background: transparent !important;
+  }
+
+:root[data-mode="auto"] {
+--jp-rendermime-error-background: transparent !important;
+}
+
