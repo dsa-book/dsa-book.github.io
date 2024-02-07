@@ -1,0 +1,11 @@
+name: jupyter-env
+channels:
+ - conda-forge
+dependencies:
+ - matplotlib
+ - numpy
+ - scipy
+ - pandas
+ - sympy
+# dependencies for building book
+ - jupyter-book
