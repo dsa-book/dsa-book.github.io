@@ -55,7 +55,7 @@ This is just a simple starter to get you started.
 You can learn a lot more at [jupyterbook.org](https://jupyterbook.org). -->
 
 
-# Computational Thermodynamics
+# Computational Thermodynamics Check
 
 These example problems are mostly adapted from those given in the (excellent) textbook *Thermodynamics* by Sanford Klein and Gregory Nellis {footcite}`KleinNellis2017`.
 
