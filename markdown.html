@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>dsa-book.github.io &#8212; Data Structures and Algorithms</title>
+    <title>Computational Thermodynamics Check &#8212; Data Structures and Algorithms</title>
   
   
   
@@ -65,10 +65,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'README';</script>
-    <link rel="canonical" href="https://dsa-book.github.io/README.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown';</script>
+    <link rel="canonical" href="https://dsa-book.github.io/markdown.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Content with notebooks" href="notebooks.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -130,8 +132,6 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -185,10 +185,10 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="docs/markdown.html">Computational Thermodynamics Check</a></li>
-<li class="toctree-l1"><a class="reference internal" href="docs/notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="docs/markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Computational Thermodynamics Check</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
     </div>
@@ -258,7 +258,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/README.md" target="_blank"
+      <li><a href="_sources/markdown.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -340,7 +340,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>dsa-book.github.io</h1>
+    <h1>Computational Thermodynamics Check</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -354,8 +354,71 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="dsa-book-github-io">
-<h1><a class="reference external" href="http://dsa-book.github.io">dsa-book.github.io</a><a class="headerlink" href="#dsa-book-github-io" title="Permalink to this heading">#</a></h1>
+  <!-- # Markdown Files
+
+Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
+in regular markdown files (`.md`), you'll write in the same flavor of markdown
+called **MyST Markdown**.
+This is a simple file to help you get started and show off some syntax.
+
+## What is MyST?
+
+MyST stands for "Markedly Structured Text". It
+is a slight variation on a flavor of markdown called "CommonMark" markdown,
+with small syntax extensions to allow you to write **roles** and **directives**
+in the Sphinx ecosystem.
+
+For more about MyST, see [the MyST Markdown Overview](https://jupyterbook.org/content/myst.html).
+
+## Sample Roles and Directives
+
+Roles and directives are two of the most powerful tools in Jupyter Book. They
+are like functions, but written in a markup language. They both
+serve a similar purpose, but **roles are written in one line**, whereas
+**directives span many lines**. They both accept different kinds of inputs,
+and what they do with those inputs depends on the specific role or directive
+that is being called.
+
+Here is a "note" directive:
+
+```{note}
+Here is a note
+```
+
+It will be rendered in a special box when you build your book.
+
+Here is an inline directive to refer to a document: {doc}`markdown-notebooks`.
+
+
+## Citations
+
+You can also footcite references that are stored in a `bibtex` file. For example,
+the following syntax: {footcite}`holdgraf_evidence_2014` will render like
+this: {footcite}`holdgraf_evidence_2014`.
+
+Moreover, you can insert a bibliography into your page with this syntax:
+The `{bibliography}` directive must be used for all the `{footcite}` roles to
+render properly.
+For example, if the references for your book are stored in `references.bib`,
+then the bibliography is inserted with:
+
+```{bibliography}
+```
+
+## Learn more
+
+This is just a simple starter to get you started.
+You can learn a lot more at [jupyterbook.org](https://jupyterbook.org). -->
+<section class="tex2jax_ignore mathjax_ignore" id="computational-thermodynamics-check">
+<h1>Computational Thermodynamics Check<a class="headerlink" href="#computational-thermodynamics-check" title="Permalink to this heading">#</a></h1>
+<p>These example problems are mostly adapted from those given in the (excellent) textbook <em>Thermodynamics</em> by Sanford Klein and Gregory Nellis <a class="footnote-reference brackets" href="#footcite-kleinnellis2017" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+<div class="docutils container" id="id2">
+<aside class="footnote brackets" id="footcite-kleinnellis2017" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Sanford Klein and Gregory Nellis. <em>Thermodynamics</em>. Cambridge University Press, New York, 3rd edition, 2017. ISBN 978-0-521-19570-6.</p>
+</aside>
+</div>
+<hr class="footnotes docutils" />
 </section>
 
     <script type="text/x-thebe-config">
@@ -388,6 +451,24 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="notebooks.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Content with notebooks</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
