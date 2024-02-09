@@ -4,8 +4,7 @@ FROM manimcommunity/manim:v0.18.0
 USER root
 
 # Install Jupyter Notebook without using cache
-RUN pip install --upgrade pip
-RUN pip install --no-cache-dir notebook
+RUN pip install notebook
 
 # Copy requirements.txt file
 COPY requirements.txt /tmp/
@@ -14,7 +13,7 @@ COPY requirements.txt /tmp/
 RUN cat /tmp/requirements.txt
 
 # Install dependencies from requirements.txt file without using cache
-RUN pip install --no-cache-dir -r /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
 
 ARG NB_USER=manimuser
 
