@@ -35,7 +35,7 @@ def set_res(quality_flag):
     config.pixel_width = 3840
     config.frame_rate = 60
 
-def show(quality_flag, sc):
+def show(quality_flag, sc, log_capture_string):
   # Set quality based on the flag
 
   # Render the scene
