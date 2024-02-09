@@ -1,23 +1,25 @@
 FROM manimcommunity/manim:v0.18.0
 
-# Switch to root to install additional dependencies
+# Use root for installation processes
 USER root
 
-# Install Jupyter Notebook (or JupyterLab if preferred)
-RUN pip install notebook
+# Install Jupyter Notebook without using cache
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir notebook
 
-RUN ls /tmp/
-
-# Install dependencies from requirements.txt file
-# Ensure your requirements.txt file is in the build context
+# Copy requirements.txt file
 COPY requirements.txt /tmp/
-RUN pip install -r /tmp/requirements.txt
 
-# Setup argument for non-root user
+# Display the contents of requirements.txt
+RUN cat /tmp/requirements.txt
+
+# Install dependencies from requirements.txt file without using cache
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
 ARG NB_USER=manimuser
 
 # Switch back to the non-root user for running the application
 USER ${NB_USER}
 
-# Copy your application code (with proper ownership)
+# Copy your application code with the correct ownership
 COPY --chown=manimuser:manimuser . /manim
