@@ -1,8 +1,7 @@
 FROM manimcommunity/manim:v0.18.0
 
 USER root
-RUN pip install notebook
-RUN pip install matplotlib
+RUN pip install notebook, matplotlib
 
 ARG NB_USER=manimuser
 USER ${NB_USER}
