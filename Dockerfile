@@ -6,7 +6,7 @@ USER root
 # Install Jupyter Notebook (or JupyterLab if preferred)
 RUN pip install notebook
 
-RUN ls -la
+RUN ls /tmp/
 
 # Install dependencies from requirements.txt file
 # Ensure your requirements.txt file is in the build context
