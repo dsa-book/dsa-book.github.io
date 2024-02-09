@@ -19,21 +19,22 @@ def start():
 
 def set_res(quality_flag):
   if quality_flag == "-ql":
-    config.pixel_height = 480
-    config.pixel_width = 854
-    config.frame_rate = 15
+    height = 480
+    width = 854
+    fr = 15
   elif quality_flag == "-qm":
-    config.pixel_height = 720
-    config.pixel_width = 1280
-    config.frame_rate = 30
+    height = 720
+    width = 1280
+    fr = 30
   elif quality_flag == "-qh":
-    config.pixel_height = 1080
-    config.pixel_width = 1920
-    config.frame_rate = 60
+    height = 1080
+    width = 1920
+    fr = 60
   elif quality_flag == "-qk":
-    config.pixel_height = 2160
-    config.pixel_width = 3840
-    config.frame_rate = 60
+    height = 2160
+    width = 3840
+    fr = 60
+  return height, width, fr
 
 def show(quality_flag, sc, log_capture_string):
   # Set quality based on the flag
