@@ -17,26 +17,26 @@ def start():
     logger.addHandler(ch)
     return log_capture_string, ch, logger
 
-def set_res(quality_flag):
-    if quality_flag == "-ql":
-        height = 480
-        width = 854
-        fr = 15
-    elif quality_flag == "-qm":
-        height = 720
-        width = 1280
-        fr = 30
-    elif quality_flag == "-qh":
-        height = 1080
-        width = 1920
-        fr = 60
-    elif quality_flag == "-qk":
-        height = 2160
-        width = 3840
-        fr = 60
-    return height, width, fr
+# def set_res(quality_flag):
+#     if quality_flag == "-ql":
+#         height = 480
+#         width = 854
+#         fr = 15
+#     elif quality_flag == "-qm":
+#         height = 720
+#         width = 1280
+#         fr = 30
+#     elif quality_flag == "-qh":
+#         height = 1080
+#         width = 1920
+#         fr = 60
+#     elif quality_flag == "-qk":
+#         height = 2160
+#         width = 3840
+#         fr = 60
+#     return height, width, fr
 
-q_dict = {'-ql': (480, 854, 15), 'qm': (720, 1280, 30), '-qh': (1080, 1920, 60), '-qk': (2160, 3840, 60)}
+q_dict = {'-ql': (480, 854, 15), '-qm': (720, 1280, 30), '-qh': (1080, 1920, 60), '-qk': (2160, 3840, 60)}
 
 def show(quality_flag, sc, log_capture_string):
     # Set quality based on the flag
