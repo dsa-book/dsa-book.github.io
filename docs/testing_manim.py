@@ -36,6 +36,8 @@ def set_res(quality_flag):
         fr = 60
     return height, width, fr
 
+q_dict = {'-ql': (480, 854, 15), 'qm': (720, 1280, 30), '-qh': (1080, 1920, 60), '-qk': (2160, 3840, 60)}
+
 def show(quality_flag, sc, log_capture_string):
     # Set quality based on the flag
 
