@@ -17,6 +17,13 @@ def start():
     logger.addHandler(ch)
     return log_capture_string, ch, logger
 
+def render_scene_with_quality(scene_class, quality_flag):
+    log_capture_string, ch, logger = start()
+    config.flush_cache = True
+    config.pixel_height, config.pixel_width, config.frame_rate = q_dict[quality_flag]
+    scene = scene_class()
+    show(quality_flag, scene, log_capture_string)
+
 # def set_res(quality_flag):
 #     if quality_flag == "-ql":
 #         height = 480
