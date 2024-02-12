@@ -1,6 +1,6 @@
 title: Data Structures and Algorithms
 author: Naresh Kumar Devulapally
-logo: logo.png
+logo: assets/website/logo-draft.png
 
 # Repository Information
 repository:
@@ -9,7 +9,7 @@ repository:
 
 # Execution settings
 execute:
-  execute_notebooks: force
+  execute_notebooks: 'off'
 
 # Latex (PDF) settings
 latex:
@@ -83,7 +83,7 @@ sphinx:
       repository_branch: "main"
 
 bibtex_bibfiles:
-  - references.bib  # make sure this path is correct
+  - references.bib  
 
 # HTML settings
 html:
@@ -94,6 +94,8 @@ html:
   extra_path:
     - images/badge.svg
     - _static/plotly_htmls/
+  favicon: assets/website/logo-draft.png
+
 
 # MyST Parser extensions
 parse:
