@@ -1,0 +1,4 @@
+ docs/_build/
+ docs/media/
+ docs/.ipynb_checkpoints/
+ docs/__pycache__/

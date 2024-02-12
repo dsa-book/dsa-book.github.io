@@ -57,3 +57,52 @@ def show(quality_flag, sc, log_capture_string):
             """))
     else:
         print("Could not find the video file path in Manim's output.")
+
+import os
+import shutil
+import logging
+import io
+import re
+from IPython.display import HTML
+
+# Assuming the rest of the provided code is unchanged, including the start() function and q_dict
+
+def render_local(scene_class, quality_flag):
+    log_capture_string, ch, logger = start()
+    config.flush_cache = True
+    config.pixel_height, config.pixel_width, config.frame_rate = q_dict[quality_flag]
+    scene = scene_class()
+    show_local(quality_flag, scene, log_capture_string)
+
+def show_local(quality_flag, sc, log_capture_string):
+    config.flush_cache = True
+    scene = sc
+    scene.render()
+
+    log_contents = log_capture_string.getvalue()
+    file_path_match = re.search(r"File ready at '(.+?)'", log_contents)
+
+    clear_output(wait=True)
+
+    if file_path_match:
+        original_file_path = file_path_match.group(1)
+        videos_folder = '_static/videos'
+        if not os.path.exists(videos_folder):
+            os.makedirs(videos_folder)
+        base_file_name = os.path.basename(original_file_path)
+        local_file_path = os.path.join(videos_folder, base_file_name)
+        shutil.copy(original_file_path, local_file_path)
+        
+        # print(f"Video copied to {local_file_path}")
+        clear_output(wait=True)
+        # Displaying the video from the local folder in the notebook
+        display(HTML(f"""
+        <div style="width: 100%;">
+          <video width="100%" controls>
+              <source src="{local_file_path}" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+        </div>
+        """))
+    else:
+        print("Could not find the video file path in Manim's output.")
