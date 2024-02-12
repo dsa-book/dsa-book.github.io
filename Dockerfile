@@ -24,6 +24,6 @@ ARG NB_USER=manimuser
 USER ${NB_USER}
 
 # COPY --chown=manimuser:manimuser . /dsa-book.github.io
-# COPY --chown=manimuser:manimuser . /manim
+COPY --chown=manimuser:manimuser . /manim
 
 
