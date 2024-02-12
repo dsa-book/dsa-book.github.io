@@ -15,16 +15,14 @@ RUN cat /tmp/requirements.txt
 # Install dependencies from requirements.txt file without using cache
 RUN pip install -r /tmp/requirements.txt
 
-RUN ls
+COPY . /dsa-book.github.io
 
-RUN cd docs
+WORKDIR /dsa-book.github.io/docs
 
 ARG NB_USER=manimuser
 
-# Switch back to the non-root user for running the application
 USER ${NB_USER}
 
-# Copy your application code with the correct ownership
-COPY --chown=manimuser:manimuser . /manim
+COPY --chown=manimuser:manimuser . /dsa-book.github.io
 
 
