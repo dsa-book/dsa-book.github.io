@@ -15,15 +15,15 @@ RUN cat /tmp/requirements.txt
 # Install dependencies from requirements.txt file without using cache
 RUN pip install -r /tmp/requirements.txt
 
-COPY . /dsa-book.github.io
+COPY . /interactive-dsa-book.github.io
 
-WORKDIR /dsa-book.github.io/docs
+WORKDIR /interactive-dsa-book.github.io/docs
 
 ARG NB_USER=manimuser
 
 USER ${NB_USER}
 
-COPY --chown=manimuser:manimuser . /dsa-book.github.io
+COPY --chown=manimuser:manimuser . /interactive-dsa-book.github.io
 # COPY --chown=manimuser:manimuser . /manim
 
 
