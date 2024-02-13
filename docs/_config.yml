@@ -4,7 +4,7 @@ logo: assets/website/logo-draft.png
 
 # Repository Information
 repository:
-  url: https://github.com/dsa-book/dsa-book.github.io
+  url: https://github.com/interactive-dsa-book/interactive-dsa-book.github.io
   branch: main
 
 # Execution settings
@@ -79,7 +79,7 @@ launch_buttons:
 sphinx:
   config:
     thebe_config:
-      repository_url: "https://github.com/dsa-book/dsa-book.github.io"
+      repository_url: "https://github.com/interactive-dsa-book/interactive-dsa-book.github.io"
       repository_branch: "main"
 
 bibtex_bibfiles:
@@ -119,7 +119,7 @@ parse:
 # Add additional Sphinx extensions
 sphinx:
   config:
-    html_baseurl: 'https://dsa-book.github.io'
+    html_baseurl: 'https://interactive-dsa-book.github.io'
   extra_extensions:
     - sphinx_inline_tabs
     - sphinx_sitemap
