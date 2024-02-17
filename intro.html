@@ -65,6 +65,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="canonical" href="https://interactive-dsa-book.github.io/intro.html" />
     <link rel="shortcut icon" href="_static/logo-draft.png"/>
@@ -379,7 +381,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-the-live-code-feature">Testing the “Live Code” feature</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-the-live-code-feature">Testing the “Live Code” feature</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-animation-visualization-check-using-manim">Example animation visualization check using Manim</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -396,9 +401,7 @@ document.write(`
 <p>This book started as a way to track my progress while learning Data Structures and Algorithms.</p>
 <div class="tip admonition">
 <p class="admonition-title">Why learn from here?</p>
-<p>✅ <strong>In-Browser Live Coding</strong>: Jump straight into coding without the hassle of installations. Click on the <span class="fa fa-rocket"></span> icon –&gt; “Live Code”, and instantly access a coding workspace within your browser, tailored to fortify your understanding of data structures and algorithms.</p>
-<p>✅ <strong>Advanced Visualizations</strong>: Our platform takes learning a step further with <a class="reference external" href="https://www.manim.community/">Manim CE</a>, offering in-browser, interactive visualizations. This allows not just to view but also to manipulate and test algorithms with new test cases, offering a deeper understanding through dynamic, visual learning.</p>
-<p>✅ <strong>Interactive Algorithm Testing</strong>: We go beyond static visualizations. Test and visualize new algorithms or modify existing ones with custom test cases directly within your browser, making complex concepts more accessible and understandable.</p>
+<p>✅ <strong>In-Browser Live Coding</strong>: Jump straight into coding without the hassle of installations. Click on the <span class="fa fa-rocket"></span> icon <span class="math notranslate nohighlight">\(\rightarrow\)</span> “Live Code”, and instantly access a coding workspace within your browser, tailored to fortify your understanding of Data Structures and Algorithms.</p>
 <p>✅ <strong>Unified Learning Platform</strong>: We integrate live coding exercises with comprehensive learning materials, ensuring a seamless blend of theory and practical application.</p>
 </div>
 <section id="testing-the-live-code-feature">
@@ -419,11 +422,19 @@ Hello World!
 </div>
 </div>
 </div>
+<div class="admonition-upcoming-features admonition">
+<p class="admonition-title">Upcoming Features</p>
+<p>🏗️ <strong>Advanced Visualizations</strong>: Our platform takes learning a step further with <a class="reference external" href="https://www.manim.community/">Manim CE</a>, offering in-browser, interactive visualizations. This allows not just to view but also to manipulate and test algorithms with new examples, offering a deeper understanding through dynamic, visual learning.</p>
+<p>🏗️ <strong>Interactive Algorithm Testing</strong>: We go beyond static visualizations. Test and visualize new algorithms or modify existing ones with custom examples directly within your browser, making complex concepts more accessible and understandable.</p>
+</div>
+<section id="example-animation-visualization-check-using-manim">
+<h3>Example animation visualization check using Manim<a class="headerlink" href="#example-animation-visualization-check-using-manim" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">manim_utils.logo</span> <span class="kn">import</span> <span class="n">Logo</span>
 <span class="kn">from</span> <span class="nn">render_utils</span> <span class="kn">import</span> <span class="n">render_scene_with_quality</span><span class="p">,</span> <span class="n">render_local</span>
 <span class="n">quality</span> <span class="o">=</span> <span class="s2">&quot;-qh&quot;</span>
+<span class="c1"># render_local(Logo, quality)</span>
 <span class="n">render_scene_with_quality</span><span class="p">(</span><span class="n">Logo</span><span class="p">,</span> <span class="n">quality</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -432,12 +443,14 @@ Hello World!
 <div class="output text_html">
         <div style="width: 100%;">
           <video width="100%" controls>
-              <source src="_static/videos\Logo.mp4" type="video/mp4">
+              <source src="_static/videos\Logo_1708134130.mp4" type="video/mp4">
               Your browser does not support the video tag.
           </video>
         </div>
         </div></div>
 </div>
+<p>Manim animations are still in progress and shall be added in the future for each Algorithm.</p>
+</section>
 </section>
 </section>
 
@@ -487,7 +500,10 @@ Hello World!
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-the-live-code-feature">Testing the “Live Code” feature</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-the-live-code-feature">Testing the “Live Code” feature</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-animation-visualization-check-using-manim">Example animation visualization check using Manim</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
