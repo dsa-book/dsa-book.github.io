@@ -1,5 +1,7 @@
 name: Build Notebook Container
 on: [push] # Or other events like pull_request, etc.
+permissions:
+  contents: write
 
 jobs:
   build:
