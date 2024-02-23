@@ -3,9 +3,9 @@
 
 format: jb-book
 root: intro.ipynb
-# chapters:
-# - file: markdown
-# - file: notebooks
-# - file: markdown-notebooks
+parts:
+- caption: Data Structures
+  chapters:
+  - file: data-structures/arrays.md
 
 
