@@ -1,7 +1,12 @@
 #!/bin/bash
 
-# Export the path
-export PATH="$PATH:/Users/devulapa/Library/Python/3.9/bin"
+# Get the path to the Python binary folder
+PYTHON_BIN_PATH=$(dirname "$(which python3)")
+
+# Export the path only if COLAB is not set or set to false
+if [ -z "$COLAB" ] || [ "$COLAB" = false ]; then
+    export PATH="$PATH:$PYTHON_BIN_PATH"
+fi
 
 # Check if local-req.txt exists
 if [ -f "local-req.txt" ]; then
